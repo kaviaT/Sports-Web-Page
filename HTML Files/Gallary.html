@@ -1,0 +1,163 @@
+<DOCTYPE! html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="../CSS Files/gallery.css">
+		<title>Image Gallery</title>
+		<style>
+body {
+  background-image: url('../Images/webcw-image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+		
+	</head>
+	<body>
+	
+	<div>
+	<h1 style="font-size:50px;text-align:center;color:white;">Image Gallery</h1>
+	
+	
+	<!--  gallery -->
+		<script>
+			function showImage(selectedVal){
+				var selectedImage = selectedVal;
+				//alert(selectedImage);
+				if(selectedImage == "Football"){
+					var image = "../Images/i1.jpg";
+					document.getElementById("Football").src = image;
+					document.getElementById("sport_Football").innerHTML = "The Football";
+					document.getElementById("sport_end").innerHTML = "Football, also known as football or soccer association, a game in which two teams of 11 players try to move the ball into the goal of the opposing side, using every aspect of their bodies but their hands and arms. Just the goalkeeper is allowed to handle the ball, and can only handle it inside the penalty area surrounding the target. Wins the team which scores more goals.";
+				}else if(selectedImage == "Badminton"){
+					var image = "../Images/i2.jpg";
+					document.getElementById("Football").src = image;
+					document.getElementById("sport_Football").innerHTML = "Badminton";
+					document.getElementById("sport_end").innerHTML = "Badminton is a racquet sport that uses racquets to hit a shuttlecock across a net. While it can be played with bigger teams, singles (with one player per side) and doubles (with two players per side) are the most common types of the game. Badminton is often played in a yard or on a beach as casual outdoor activity formal games are played in an enclosed rectangular court. Points are scored.";
+				}else if(selectedImage == "Hockey"){
+					var image = "../Images/i3.jpg";
+					document.getElementById("Football").src = image;
+					document.getElementById("sport_Football").innerHTML = "Hockey";
+					document.getElementById("sport_end").innerHTML = "Hockey is a sport where two teams are competing against each other by using a hockey stick to move a ball or a puck into the goal of the opponent. There are many hockey types including bandy, field hockey, ice hockey, and rink hockey.";
+				}else if(selectedImage == "Volleyball"){
+					var image = "../Images/i4.jpg";
+					document.getElementById("Football").src = image;
+					document.getElementById("sport_Football").innerHTML = "Volleyball";
+					document.getElementById("sport_end").innerHTML = "Volleyball is a competitive sport, in  which a net divides two teams of six players. Every team tries to score points by grounding a ball on the court of the other team under structured rules";
+				}else{
+					var image = "../Images/i5.jpg";
+					document.getElementById("Football").src = image;
+					document.getElementById("sport_Football").innerHTML = "Cricket";
+					document.getElementById("sport_end").innerHTML = "Cricket is a sport played by two teams of eleven players who each score runs (points). This is achieved by throwing the ball over the ground, or moving between two sets of three tiny wooden posts called wickets. ... The play area within the cricket ground or stadium is a 30 yard circle. ";
+				}
+			}
+		</script>
+		<!-- end gallery-->
+		
+		<!-- Script for changing main-container background-color -->
+		<script>
+			function changeColour(){
+				var selectedColour = document.getElementById("b_color").value;
+				//alert(selectedColour);
+				if(selectedColour == "#19ECCA"){
+					document.getElementById("imagegallery").style.backgroundColor = "blue";
+				}else if(selectedColour == "#40EC4C"){
+					document.getElementById("imagegallery").style.backgroundColor = "green";
+				}else{
+					document.getElementById("imagegallery").style.backgroundColor = "purple";
+				}
+				
+			}
+		</script>
+		<!-- End of Script for changing main-container background-color -->
+	
+	<!-- change text color -->
+		<script>
+			function changeTextColour(){
+				var selectedTextColour = document.getElementById("t_colour").value;
+				if(selectedTextColour == "#ECF479"){
+					document.getElementById("sport_Football").style = "color: lightyellow";
+					document.getElementById("sport_end").style = "color: lightyellow";
+				}else if(selectedTextColour == "#F7E5F2"){
+					document.getElementById("sport_Football").style = "color: lightpurple";
+					document.getElementById("sport_end").style = "color: lightpurple";
+				}else{
+					document.getElementById("sport_Football").style = "color:lightgreen ";
+					document.getElementById("sport_end").style = "color: lightgreen";
+				}
+			}
+		</script>
+		<!-- end of change text colour-->
+	
+	
+	<!-- BODY SECTION WITH DETAILS AND GRID VIEW -->
+	
+	
+		
+		
+			<form>
+			
+			<div class="imagegallery" id="imagegallery">
+		
+				<div id="container">
+				<img src="../Images/i1.jpg"  alt="i1" width="250" height="250" onclick="showImage('Football');">
+				<img src="../Images/i2.jpg"  alt="i2" width="250" height="250" onclick="showImage('Badminton');">
+				<img src="../Images/i3.jpg"  alt="i3" width="250" height="250" onclick="showImage('Hockey');">
+				<img src="../Images/i4.jpg"  alt="i4" width="250" height="250" onclick="showImage('Volleyball');">
+				<img src="../Images/i5.jpg"  alt="i5" width="250" height="250" onclick="showImage('Cricket');">
+				</div>
+				<div class="pulldown_menu">
+					<select id="b_color" style="margin-right:15px" onchange="changeColour()">
+					  <option value="volvo" hidden>Background Colour</option>
+					  <option value="#19ECCA" >Blue</option>
+					  <option value="#40EC4C">Green</option>
+					  <option value="#DF6AE8">purple</option>
+					</select>
+					<select id="t_colour" style="margin-right:15px" onchange="changeTextColour()">
+					  <option value="volvo" hidden>Text Colour</option>
+					  <option value="#ECF479">lightyellow</option>
+					  <option value="#F7E5F2">lightpurple</option>
+					  <option value="#B6F5B7">lightgreen</option>
+					</select>
+				</div>
+				
+			</form>
+			
+				<div id="description" style="margin:20px; padding:20; height:400px;border:5px red solid">
+					<h3 id="sport_Football"></h3>
+					<p id="sport_end">
+				</p>
+				<div id="gallery_description"> 
+				<div id="display_gallery">
+					<img id="Football" width="300px" height="auto"  >
+				</div>
+				
+				
+				
+				
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="footer">
+	
+		<p>&COPY:2020:Srimali Udayangani-(IIT ID:20191114)(UOW NO:w1790361)
+		       </p>
+	</div>
+	
+	</body>
+</html>
+
+	
+	
+	
+	
+	
+	

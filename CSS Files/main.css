@@ -1,0 +1,82 @@
+.banner{
+		background-image:url(../Images/mainpage.jpg);
+		background-position:center;
+		background-size:cover;
+		height:100vh;
+		}
+		
+	.bannertwo {
+		position:absolute;
+		left:50%;
+		top:90%;
+		transform: translate(-50%,-50%);
+		text-align:center;
+		color:yellow;
+		font-family: Comic Sans MS;
+		
+	}
+	
+	body {
+		margin:0;
+		padding:0;
+		  }	
+	
+	header {padding:10px 60px;
+			background-color: #303030;
+			height:65px;
+			}	
+
+	ul   {
+		width:70%;
+		float:right;
+		list-style:none;
+		}	
+		  
+	ul li{
+		width:120px;
+		height:50px;
+		line-height:50px;
+		text-align:center;
+		color:black;
+		font-size:15px;
+		float:left;
+		font-family:Sans Serif;
+		color:#fff;
+		text-transform:uppercase;
+		font-weight: bold;
+		}
+
+
+	ul li a	{
+		text-decoration: none;
+		color: #fff;
+		display: block;
+			}
+
+	ul li a:hover{
+		background-color: red;
+				}
+
+	ul li ul li{display: none;
+				background-color: #303030;
+				}
+
+	ul li:hover ul li{
+		display: block;
+					}				
+			
+	li a{
+		text-decoration:none;
+        }
+			   
+	.logo {
+	  text-decoration:none;
+	  color:red;
+      font-size:25px;
+   	  font-family: Comic Sans MS;
+	  font-weight: bold;
+	  font-style: oblique;
+	  padding:20px 0;
+      width:25%;
+	  float:left;
+		   }

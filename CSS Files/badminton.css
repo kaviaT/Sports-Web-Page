@@ -1,0 +1,79 @@
+body {background-color: #ff3333;}
+
+	.imgOne {				/*Image One*/
+		width: 400px;
+		height: 300px;
+		border-radius: 8px;
+		float: left;
+		}
+
+	.imgTwo{				/*Image Two*/
+		width: 400px;
+		height: 200px;
+		border-radius: 8px;
+		float: right;
+	}
+	.imgCourt{				/*Image of Court Measurements*/
+		width: 1000px;
+		height: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		border-radius: 8px;
+	}	
+	.imgRule{				/*Image of Rules*/
+		width: 400px;
+		height: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		border-radius: 8px;
+		float: left;
+	}
+	.imgFour{				/*Last,Bottom Image*/
+		width: 700px;
+		height: 250px;
+		border-radius: 8px;
+		float: right;
+		
+	}
+
+	p{font-size: 20px;} 	
+
+	.intro{					/*Div of Introduction*/
+		width: 70%;
+	    float: right;
+	    line-height: 1.6;
+	    font-size: 20px;
+	    margin: auto;
+       
+		}
+
+	.game{						/*Div for Second Paragraph*/
+	 	width: 70%;
+	    float: left;
+	    line-height: 1.6;
+	    margin: auto;
+	}
+	
+	.rule{					/*Div of Rules Head*/
+		height:250px;
+		width: 70%;
+	    float: right;
+	    line-height: 1.6;
+	    font-size: 20px;
+	    margin: auto;
+
+	} 
+	.equip{					/*Div of Equipments*/
+		height:200px;
+		width: 70%;
+	    line-height: 1.6;
+	    font-size: 20px;
+	    margin: left;
+
+	}
+
+	h1{text-align: center;
+		font-family: Comic Sans MS;
+	   }

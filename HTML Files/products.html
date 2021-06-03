@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+ 
+ <html lang="en">
+ 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Sets the width of the page to follow the screen-width of the device-->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Edge mode tells Internet Explorer to display content in the highest mode available--> 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"> 
+		<link rel="stylesheet" href="../CSS Files/products.css">
+		<script src="../Products/store.js"></script>
+		<title> Store &nbsp;|&nbsp; Sports For Life </title>
+	</head>
+	
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="navigation">
+					<div class="logo">
+						<img src="../Images/logo 5.png" width="125px">
+					</div>
+					<nav>
+						<ul>
+							<li><a href="../HTML Files/MainPage.html">Home</a></li>
+							<li><a href="#our_products">Products</a></li>
+							<li><a href="../HTML Files/image.html">About</a></li>
+							<li><a href="#shop"><i class="fas fa-shopping-bag  fa-1.85x"></i>
+						</ul>
+					</nav>
+				</div>
+				
+				<div class="row">
+					<div class="col-2">
+						<h1>Never let good enough<br>BE enough!</h1>
+						&nbsp<br>
+						<p>To demand more of yourself than you do of others is<br>
+						the first step on any ladder of success.</p>
+						<a href="#our_products" class="btn" id="Explore">Explore &nbsp;<i class="fas fa-arrow-right"></i></a>
+					</div>
+					<div class="col-2">
+						<img src="../Images/img 1.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Products-->
+		<a name="our_products"></a>
+		<div class="products">
+			<div class="container-2">
+				<div class="prod">
+					<h2>Our products</h2> 
+					<div class="row">
+						<div class="col-3">
+							<div class="primg">
+								<img src="../Images/product 1.png">
+							</div>
+							<h4>Wilson Evolution Basketball</h4>
+							<div class="stars">								
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<p><sup>$</sup>64<sup>99</sup></p>
+							
+						</div>				
+						<div class="col-3">
+							<div class="primg">
+								<img src="../Images/product 10.png">
+							</div>
+							<h4>Chance Soft Volleyball</h4>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<p><sup>$</sup>64<sup>99</sup></p>
+							
+						</div>				
+						<div class="col-3">
+							<div class="primg">
+								<img src="../Images/product 3.png">
+							</div>
+							<h4>Nike Pitch Soccerball</h4>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<p><sup>$</sup>19<sup>96</sup></p>
+							
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Cart items-->
+		
+		<div class="container2 cart-page">
+		<a name="shop">
+			<table>
+				<tr>
+					<th>Product</th>
+					<th>Quantity</th>
+					<th>Subtotal</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="cart-info">
+							<img src="../Images/product 1.png">
+							<div>
+								<p>Wilson Evolution Basketball</p>
+								<small>Price: $64.99</small>
+								<br>
+								
+							</div>
+						</div>
+					<td><input type="number"value="1"></td>
+					<td>$64.99</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="cart-info">
+							<img src="../Images/product 10.png">
+							<div>
+								<p>Chance Soft Volleyball</p>
+								<small>Price: $64.99</small>
+								<br>
+								
+							</div>
+						</div>
+					<td><input type="number"value="1"></td>
+					<td>$64.99</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="cart-info">
+							<img src="../Images/product 3.png">
+							<div>
+								<p>Nike Pitch Soccerball</p>
+								<small>Price: $19.96</small>
+								<br>
+								
+							</div>
+						</div>
+					<td><input type="number"value="1"></td>
+					<td>$19.96</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="cart-info">
+							<img src="../Images/product exclusive 5.png">
+							<div>
+								<p>fitbit versa 2</p>
+								<small>Price: $110.49</small>
+								<br>
+								
+							</div>
+						</div>
+					<td><input type="number"value="1"></td>
+					<td>$110.49</td>
+				</tr>
+			</table>
+			
+			<div class="total-price">
+				<table>
+					<tr>
+						<td>Total</td> 
+						<td>$260.43</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div id="form" name="details">
+			<form action="" method="post" name="registration" class="register">
+				<fieldset>
+					<label for="Customer">Name:
+					<input name="Customer" id="Customer"/>
+				
+					<label for="Email">Email:
+					<input name="Email" id="Email"/>
+					
+					<input type="submit" value="Check Out">
+				</fielsset>
+			</form>
+		</div>				
+		
+		
+		<!--Exclusive-->
+		<div class="exclusive">
+			<div class="contain">
+				<div class="row">
+					<div class="col-1">
+						<img src="../Images/product exclusive 5.png" class="eximg">
+					</div>
+					<div class="col-1">
+					<p>A Sports For Life Exclusive</p>
+					&nbsp
+					<h1>fitbit versa 2</h1>
+					<small>Elevate your day with the Fitbit Versa 2&trade; premium health<br>
+					&amp; fitness smartwatch—includes Amazon Alexa Built-in,<br>
+					new sleep tools, fitness features, apps and more.<br>
+					<a href="#shop" class="btn" id="Explore">Buy Now &nbsp<i class="fas fa-arrow-right"></i></a>
+					</small>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+	
+		<!--Reviews-->
+		<div class="reviews">
+			<div class="contain-2">
+				<div class="row">
+					<div class="col">
+						<i class="fas fa-quote-left"></i>
+							<p>I am seriously happy about<br>
+							this store being available.<br>
+							Powerful features and easy to<br>
+							set up, runningan online<br>
+							store shouldn't be this much fun!</p>
+						<i class="fas fa-quote-right"></i>
+							<div class="rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<img src="../Images/review (1).jpg">
+							<h3>Ray Nadeem</h3>
+					</div>
+					<div class="col">
+						<i class="fas fa-quote-left"></i>
+							<p>Sports For Life has helped me grow<br>
+							my business amazingly. It's<br>
+							been a pleasure because<br>
+							everything has been easier<br>
+							than I ever imagined.</p>
+						<i class="fas fa-quote-right"></i>
+							<div class="rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<img src="../Images/review (2).jpg">
+							<h3>Deshani Karunaratne</h3>
+					</div>
+					<div class="col">
+						<i class="fas fa-quote-left"></i>
+							<p>The best thing about Sports For Life<br>
+							is that it's made me not have<br>
+							to worry about anything that<br>
+							has to do with e-commerce.</p>
+						<i class="fas fa-quote-right"></i>
+							<div class="rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<img src="../Images/review (3).jpg">
+							<h3>John Doe</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="lastfoot">
+			<p>Sports For Life &copy;</p>
+		</footer>
+	</body>	
+</html>
